@@ -1,0 +1,26 @@
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 52px 46px 0 170px;
+  font-weight: Medium;
+}
+#navbar__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__link {
+  padding: 0 50px;
+}
+
+.navbar__link:after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid black;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navbar__link:hover:after {
+  transform: scaleX(1);
+}
